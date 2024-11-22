@@ -1,13 +1,13 @@
 import React from 'react';
-import styles from '../styles/Hero.module.css';
+import styles from '../styles/Home.module.css';
 
 const Hero: React.FC = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.container}>
+      <div className={styles.heroContent}>
         <h1>Welcome to Our Modern Website</h1>
-        <p>Discover the simplicity of a modern design that works for you.</p>
-        <a href="#features" className={styles.ctaButton}>Learn More</a>
+        <p>Discover innovative solutions and features that will take your business to the next level.</p>
+        <button>Get Started</button>
       </div>
     </section>
   );

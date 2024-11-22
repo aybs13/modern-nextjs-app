@@ -6,4 +6,43 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+  .mainContent {
+    margin-left: 250px;
+    padding: 2rem;
+  }
+  .hero {
+    background-image: url('/images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .heroContent h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .heroContent p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .heroContent button {
+    padding: 1rem 2rem;
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .heroContent button:hover {
+    background-color: #d9534f;
+  }
   

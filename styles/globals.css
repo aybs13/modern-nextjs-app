@@ -21,3 +21,25 @@ a {
 * {
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: auto;
+    height: auto;
+  }
+
+  .sidebarList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebarList a {
+    padding: 1rem;
+    text-align: center;
+  }
+}
