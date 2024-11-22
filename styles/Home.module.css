@@ -20,11 +20,13 @@
     justify-content: center;
     text-align: center;
     color: white;
+    animation: fadeIn 1s ease-in-out;
   }
   
   .heroContent h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    animation: slideIn 1s ease-out;
   }
   
   .heroContent p {
@@ -44,5 +46,23 @@
   
   .heroContent button:hover {
     background-color: #d9534f;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+    }
+    to {
+      transform: translateY(0);
+    }
   }
   

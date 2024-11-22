@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styles from '../styles/Card.module.css';
 
 interface CardProps {
@@ -9,11 +10,15 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, image }) => {
   return (
-    <div className={styles.card}>
-      <img src={image} alt={title} className={styles.image} />
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
-    </div>
+    <motion.div
+      className={styles.card}
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.3 }}
+    >
+      <img src={image} alt={title} className={styles.cardImage} />
+      <h3>{title}</h3>
+      <p>{description}</p>
+    </motion.div>
   );
 };
 
